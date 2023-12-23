@@ -1,0 +1,85 @@
+input,
+button {
+  padding: 0.5rem;
+  border-radius: 0.3rem;
+  border: none;
+  outline: none;
+  background-color: white;
+
+}
+input:focus{
+  background-color: rgb(255, 255, 255);
+}
+.main {
+  /* background-color: black;
+  color: white; */
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginSignup {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 3rem;
+  overflow: hidden;
+  width: 70vw;
+}
+
+.Signup,
+.Login {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  height: 50vh;
+
+}
+
+.Signup {
+  background-color: rgb(218, 60, 86);
+}
+
+.Login {
+  background-color: rgb(252, 224, 230);
+
+}
+
+form {
+  text-align: left;
+}
+form * {
+  margin-bottom: 0.5rem;
+}
+button {
+  align-self: center;
+  width: 100%;
+}
+button:hover {
+  background-color: rgb(92, 50, 57);
+  color: white;
+}
+.dashboard{
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3rem;
+  gap: 1rem;
+background-color: rgb(247, 220, 225);
+border-radius: 3rem;
+
+}
+.dashboard button{
+  width: 40%;
+}

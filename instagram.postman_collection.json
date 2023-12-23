@@ -1,0 +1,328 @@
+{
+	"info": {
+		"_postman_id": "aa6ae9c3-b0ba-4ee7-aca9-78f4abc50792",
+		"name": "instagram",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10862262",
+		"_collection_link": "https://winter-shadow-2400.postman.co/workspace/Team-Workspace~9bfd48e6-aa1a-4741-8868-d94ff7557dfe/collection/10862262-aa6ae9c3-b0ba-4ee7-aca9-78f4abc50792?action=share&source=collection_link&creator=10862262"
+	},
+	"item": [
+		{
+			"name": "auth",
+			"item": [
+				{
+					"name": "signup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Abhishek\",\n    \"email\": \"theabhishek.srm@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://instagram-express-app.vercel.app/api/auth/signup",
+							"protocol": "https",
+							"host": [
+								"instagram-express-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n     \"email\": \"theabhishek.srm@gmail.com\",\n    \"password\": \"123456\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://instagram-express-app.vercel.app/api/auth/login",
+							"protocol": "https",
+							"host": [
+								"instagram-express-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer 58646907-d02f-4d1f-ab01-2ec7db95af3a",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://instagram-express-app.vercel.app/api/auth/logout",
+							"protocol": "https",
+							"host": [
+								"instagram-express-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "zuku message",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer e3c26a33-d25d-4056-a7cd-62c419caaafc",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://instagram-express-app.vercel.app/api/auth/zuku",
+							"protocol": "https",
+							"host": [
+								"instagram-express-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"auth",
+								"zuku"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "post",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ced9b47f-fb50-4d79-92f3-c3e284d53c49",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"text\" : \"I have bought a new Car\", \n    \"image\": \"https://gaadiwaadi.com/wp-content/uploads/2019/01/Toyota-Mark-X-GRMN-Front.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://instagram-express-app.vercel.app/api/post/create",
+							"protocol": "https",
+							"host": [
+								"instagram-express-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"post",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ced9b47f-fb50-4d79-92f3-c3e284d53c49",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"image\": \"https://www.partsbigboss.in/media/catalog/category/NANO-1_1.png\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://instagram-express-app.vercel.app/api/post/update/64ab7b93b140d67baee8a72f",
+							"protocol": "https",
+							"host": [
+								"instagram-express-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"post",
+								"update",
+								"64ab7b93b140d67baee8a72f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view all of ur posts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ced9b47f-fb50-4d79-92f3-c3e284d53c49",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://instagram-express-app.vercel.app/api/post/my-posts",
+							"protocol": "https",
+							"host": [
+								"instagram-express-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"post",
+								"my-posts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "view one post",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ced9b47f-fb50-4d79-92f3-c3e284d53c49",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://instagram-express-app.vercel.app/api/post/view/64ab7b93b140d67baee8a72f",
+							"protocol": "https",
+							"host": [
+								"instagram-express-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"post",
+								"view",
+								"64ab7b93b140d67baee8a72f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete one post",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer ced9b47f-fb50-4d79-92f3-c3e284d53c49",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://instagram-express-app.vercel.app/api/post/delete/64ab7b93b140d67baee8a72f",
+							"protocol": "https",
+							"host": [
+								"instagram-express-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"post",
+								"delete",
+								"64ab7b93b140d67baee8a72f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "All Posts",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer  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",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://instagram-express-app.vercel.app/api/post/all-posts",
+							"protocol": "https",
+							"host": [
+								"instagram-express-app",
+								"vercel",
+								"app"
+							],
+							"path": [
+								"api",
+								"post",
+								"all-posts"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
